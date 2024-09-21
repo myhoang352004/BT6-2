@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+  <title>Information about Murach</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css" type="text/css"/>
+</head>
+<body>
+<div>
+  <img src="hinhanh/sos.jpg" width="150" height="150" alt="Murach">
+
+  <h1> Survey </h1>
+  <p><i>If you have a moment, we'd appreciate it if you would fill out this survey</i></p>
+  <hr>
+  <form action="survey" method="post">
+    <h2> Your Information </h2>
+    <input type="hidden" name="action" value="add">
+
+    <label>First Name:</label><br>
+    <input type="text" name="firstName" required><br>
+
+    <label>Last Name:</label><br>
+    <input type="text" name="lastName" required><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br>
+
+    <label>Date of Birth: </label><br>
+    <input type="date" name="birth" required><br>
+
+    <h2> How did you hear us about? </h2>
+    <input type="radio" id="opt1" name="option" value="Search Engine">
+    <label for="opt1">Search Engine </label>
+
+    <input type="radio" id="opt2" name="option" value="Word Of Mouth">
+    <label for="opt2">Word Of Mouth </label>
+
+    <input type="radio" id="opt3" name="option" value="Social Media">
+    <label for="opt3">Social Media </label>
+
+    <input type="radio" id="opt4" name="option" value="Other">
+    <label for="opt4">Other </label><br>
+
+    <h2>Would you like to receive announcements about new CDs and special offers</h2>
+    <input type="checkbox" id="select1" name="select1" value="YES, I'd like that">
+    <label for="select1"> YES, I'd like that</label><br>
+
+    <input type="checkbox" id="select2" name="select2" value="YES, please send me email announcements">
+    <label for="select2"> YES, please send me email announcements </label><br><br>
+
+    <label for="contacts">Please contact me by:</label>
+    <select name="contacts" id="contacts">
+      <option value="Email or postal mail">Email or postal mail</option>
+      <option value="Email only">Email only</option>
+      <option value="Postal mail only">Postal mail only</option>
+    </select><br><br>
+
+    <label>&nbsp;</label>
+    <input type="submit" value="Submit" id="submit">
+  </form>
+</div>
+</body>
+</html>
